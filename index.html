@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>POPCAT CLASSIC</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: sans-serif;
+                user-select: none;
+            }
+            .container {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #bdaa90;
+            }
+            .title {
+                width: 80%;
+                margin-top: 2em;
+                max-width: 600px;
+            }
+            .cat-img {
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-size: 80px;
+                -webkit-text-stroke: 3px black;
+                flex: 1;
+                max-width: 800px;
+            }
+            #p {
+                background-image: url('imgs/p.png');
+                background-position: bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #op {
+                background-image: url('imgs/op.png');
+                background-position: bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="title" src="imgs/popcat.svg" alt="POPCAT CLASSIC" width="400px">
+            <div class="cat-img" id="p">0</div>
+        </div>
+        
+    </body>
+</html>
