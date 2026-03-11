@@ -52,14 +52,19 @@
         <script>
             let count = 0;
             let catImg = document.getElementById('p');
+            let popSound = new Audio('pops/pop1.mp3');
 
             function addCount(){
                 count++;
                 catImg.innerHTML = count;
                 catImg.id = 'op';
+                popSound.currentTime = 0;
+                popSound.play();
             }
             let close = () => {
-                catImg.id = 'p';
+                setTimeout(() => {
+                    catImg.id = 'p';
+                }, 25);
             }
             document.addEventListener('pointerdown', addCount);
             document.addEventListener('pointerup', close);
